@@ -93,7 +93,10 @@ const ChatInputWidget: React.FC = () => {
         onKeyDown={handleKeyDown}
         rows={1}  // Set initial rows to 1
       />
-      <button className="icon-btn" onClick={handleIconClick}>
+      <button
+        className={`icon-btn ${isRecording ? 'recording' : ''}`}
+        onClick={handleIconClick}
+      >
         {inputText.trim().length > 0 ? (
           <SendIcon />
         ) : isRecording ? (

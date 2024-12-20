@@ -85,6 +85,12 @@ body {
     border: none;
 }
 
+/* Recording state styles for the button */
+.icon-btn.recording {
+    background: linear-gradient(145deg, #ff66b2, #eb0451) !important; /* Red color during recording */
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4); /* Optional red glow */
+}
+
 /* Position the widget inside Streamlit’s specified container */
 [data-testid="stBottomBlockContainer"] .chat-container {
     position: fixed !important;
@@ -134,5 +140,3 @@ body {
         font-size: 16px;
     }
 }
- 
- 
