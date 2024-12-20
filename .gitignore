@@ -101,7 +101,6 @@ package-lock.json
 yarn.lock
 
 # Webpack and build folders
-frontend/build/
 frontend/dist/
 frontend/.cache/
 
